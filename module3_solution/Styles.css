@@ -1,0 +1,59 @@
+/********** Base styles **********/
+
+#t1 {
+  background-color: LightPink;
+  color: black;
+  font-weight: bold;
+}
+
+#t2 {
+  background-color: FireBrick;
+  color: white;
+  font-weight: bold;
+}
+ 
+#t3 {
+  background-color: Khaki;
+  color: black;
+  font-weight: bold;
+}
+
+#t21 {
+  background-color: red;
+  color: black;
+  font-weight: bold;
+}
+
+#t22 {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+}
+ 
+#t23 {
+  background-color: green;
+  color: black;
+  font-weight: bold;
+}
+
+/*#nav-list a:hover {
+  background: #E7E7E7;
+}*/
+
+#nav-list {
+  margin-top: 10px;
+}
+#nav-list a {
+  color: #951C49;
+  text-align: center;
+}
+#nav-list a:hover {
+  background: #E7E7E7;
+}
+#nav-list a span {
+  font-size: 1.8em;
+}
+
+#header-nav{
+	background-color: Khaki;
+}
