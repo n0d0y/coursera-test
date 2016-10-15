@@ -2,8 +2,7 @@
 
 #t1 {
   background-color: LightPink;
-  color: black;
-  font-weight: bold;
+  
 }
 
 #t2 {
@@ -17,43 +16,29 @@
   color: black;
   font-weight: bold;
 }
-
-#t21 {
-  background-color: red;
-  color: black;
+#nav-list li:hover {
+  background: lightgrey;
   font-weight: bold;
 }
-
-#t22 {
-  background-color: black;
-  color: white;
-  font-weight: bold;
-}
- 
-#t23 {
-  background-color: green;
-  color: black;
-  font-weight: bold;
-}
-
-/*#nav-list a:hover {
-  background: #E7E7E7;
-}*/
-
-#nav-list {
-  margin-top: 10px;
+#nav-list li {
+  font-size: 1.8em;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: khaki;
 }
 #nav-list a {
   color: #951C49;
   text-align: center;
 }
-#nav-list a:hover {
-  background: #E7E7E7;
-}
-#nav-list a span {
-  font-size: 1.8em;
+.icon-bar {
+ border: 1px solid red;
 }
 
-#header-nav{
-	background-color: Khaki;
+#header-nav {
+	background-color: #E7E7E7;
+}
+.text {
+  padding: 10px;
+  font-family: tahoma;
+  font-size: 14pt;
 }
