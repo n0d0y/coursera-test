@@ -1,0 +1,44 @@
+/********** Base styles **********/
+
+#t1 {
+  background-color: LightPink;
+  
+}
+
+#t2 {
+  background-color: FireBrick;
+  color: white;
+  font-weight: bold;
+}
+ 
+#t3 {
+  background-color: Khaki;
+  color: black;
+  font-weight: bold;
+}
+#nav-list li:hover {
+  background: lightgrey;
+  font-weight: bold;
+}
+#nav-list li {
+  font-size: 1.8em;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: khaki;
+}
+#nav-list a {
+  color: #951C49;
+  text-align: center;
+}
+.icon-bar {
+ border: 1px solid red;
+}
+
+#header-nav {
+	background-color: #E7E7E7;
+}
+.text {
+  padding: 10px;
+  font-family: tahoma;
+  font-size: 14pt;
+}
