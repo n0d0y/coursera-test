@@ -1,27 +1,35 @@
 /********** Base styles **********/
 
-#t1 {
-  background-color: LightPink;
-  
+p {
+  font-size: 16pt
 }
 
-#t2 {
-  background-color: FireBrick;
+#t1 {
+  background-color: darkred;
   color: white;
   font-weight: bold;
+  margin-bottom: 20px;
 }
- 
-#t3 {
-  background-color: Khaki;
-  color: black;
+#t1h2  {
+  font-size: 30pt;
+}
+#t2 {
+  background-color: lightblue;
+  color: darkblue;
   font-weight: bold;
+  margin-bottom: 20px;
 }
-#nav-list li:hover {
+#t3 {
+  background-color: red;
+  color: gold;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+#nav-list a:hover {
   background: lightgrey;
   font-weight: bold;
 }
-#nav-list li {
-  font-size: 1.8em;
+#nav-list a {
   padding-top: 10px;
   padding-bottom: 10px;
   background-color: khaki;
@@ -33,12 +41,14 @@
 .icon-bar {
  border: 1px solid red;
 }
-
+#pict {
+  width: 60px;
+  border-left: 40px;
+}
 #header-nav {
 	background-color: #E7E7E7;
 }
-.text {
-  padding: 10px;
-  font-family: tahoma;
-  font-size: 14pt;
+#tag {
+  font-size: 20pt;
+  color: blue;
 }
