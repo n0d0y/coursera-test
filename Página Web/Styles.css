@@ -1,0 +1,176 @@
+/********** Base styles **********/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  /*padding: 0;
+  margin: 0;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  color: black; */
+}
+
+h1 {
+  margin-bottom: 15px;
+}
+
+h2 {
+  font-weight: bold!important;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid darkblue;
+}
+
+.btn {
+  margin: 8px!important;
+  padding: 0px!important;
+}
+
+.dropdown-toggle.btn-default {
+  border-color: darkblue;
+  background-color: #94a8f1!important;
+}
+
+.dropdown-toggle.btn-default:hover {
+  background-color: #E7E7E7!important;
+}
+
+.dropdown-menu {
+  background-color: rgba(71, 114, 227, 0.39)!important;
+}
+
+.navbar-toggle {
+  background-color: #94a8f1!important;
+}
+
+.navbar-toggle:hover {
+   background-color: #E7E7E7!important;
+}
+
+.navbar-collapse {
+  margin: 0px;
+  padding: 0px!important;
+}
+
+#header-nav {
+  background-color: rgba(71, 114, 227, 0.39);
+  border-radius: 0;
+  border: 0;
+}
+
+#header-name {
+  font-family: "Garamond", fantasy, serif;
+  margin: 13px;
+  padding-right: 40px;
+  font-size: 36px;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
+}
+
+#pict {
+  margin-top: 15px;
+  margin-right: 5px;
+}
+
+#pict:hover {
+  border: 2px solid black;
+}
+
+#nav-list {
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+#nav-list li {
+  padding: 0px 10px;
+  /*background-color: #94a8f1;*/
+}
+
+#nav-list li:hover {
+  background: #94a8f1;
+}
+
+#main-body {
+  background-color: grey;
+}
+
+/* Simple Responsive Framework. */
+
+
+/********** Large devices only **********/
+@media (min-width: 1200px){
+  h2 {
+    font-size: 1.5em!important;
+  }
+  #pict {
+    width: 50px;
+    height: 30px;
+  }
+  #nav-list li {
+    height: 65px;
+  }
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px){
+  h2 {
+    font-size: 1.3em!important;
+  }
+  #header-name {
+    font-size: 30px;
+  }
+  #pict {
+    width: 45px;
+    height: 25px;
+  }
+  #nav-list li {
+    height: 59px;
+  }
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  h2 {
+    font-size: 1.1em!important;
+  }
+  #header-name {
+    padding-right: 30px;
+    font-size: 24px;
+  }
+   #pict {
+    width: 40px;
+    height: 20px;
+  }
+  #nav-list li {
+    height: 52px;
+    margin-right: 10px;
+  }
+}
+
+/********** Extra Small devices only **********/
+@media (max-width: 767px) {
+  h2 {
+    font-size: 1.3em!important;
+  }
+  #header-name {
+    font-size: 20px;
+    padding: 0px;
+    margin-top: 15px;
+    margin-right: 0px;
+  }
+  #pict_ico {
+    width: 35px;
+  }
+  #nav-list li {
+    border: 1px solid;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    margin-right: 0px;
+    background-color: #94a8f1;
+  }
+  #nav-list li:hover {
+    background: #E7E7E7;
+  }
+}
