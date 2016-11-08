@@ -12,17 +12,6 @@ $(function () { // Same as document.addEventListener("DOMContentLoaded"...)
 	$("#navbarToggle").click(function (event) {
 		$(event.target).focus();
 	});
-
-	// To change the flag icon when you choose a different languange
-	$("#lflag_ico").click(function (event) {
-		$ajaxUtils.sendGetRequest(
-		Latvianflag,
-		function (responseText) {
-			document.querySelector("#chosenflag")
-				.innerHTML = responseText;
-		},
-		false);
-	});
 });
 
 
@@ -73,6 +62,18 @@ document.addEventListener("DOMContentLoaded", function(event) {
 		},
 		false);
 });
+
+
+// To change the flag icon when you choose a different languange
+	$("#lflag_ico").click(function (event) {
+		$ajaxUtils.sendGetRequest(
+		Latvianflag,
+		function (responseText) {
+			document.querySelector("#chosenflag")
+				.innerHTML = responseText;
+		},
+		false);
+	});
 
 
 // Expose utility to the global object
