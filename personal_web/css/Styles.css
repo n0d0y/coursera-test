@@ -23,6 +23,10 @@ h2 {
   border: 1px solid darkblue;
 }
 
+.navbar-header {
+  width: 100%;
+}
+
 .btn {
   margin: 8px!important;
   padding: 0px!important;
@@ -61,7 +65,12 @@ h2 {
 }
 
 .pict:hover {
-  border: 2px solid black;
+  cursor: pointer;
+  background-color: #94a8f1;
+}
+
+.dropdown-menu li:hover {
+  background-color: #E7E7E7;
 }
 
 #header-nav {
@@ -86,7 +95,9 @@ h2 {
 
 #nav-list li {
   padding: 0px 10px;
-  /*background-color: #94a8f1;*/
+  background-image: linear-gradient(#b7c8f4, #94a8f1);
+  border: 1px solid darkblue;
+  border-radius: 5px;
 }
 
 #nav-list li:hover {
@@ -106,6 +117,8 @@ h2 {
     font-size: 1.5em!important;
   }
   #nav-list li {
+    margin-right: 20px;
+    margin-bottom: 5px;
     height: 65px;
   }
 }
@@ -119,6 +132,8 @@ h2 {
     font-size: 30px;
   }
   #nav-list li {
+    margin-right: 15px;
+    margin-bottom: 5px;
     height: 59px;
   }
 }
@@ -128,9 +143,12 @@ h2 {
   h2 {
     font-size: 1.1em!important;
   }
-  .pict {
-  width: 35px;
-}
+  .pict_ico {
+    width: 35px;
+  }
+  .puntero {
+   cursor: pointer;
+  }
   #header-name {
     padding-right: 30px;
     font-size: 24px;
@@ -154,6 +172,9 @@ h2 {
   }
   .pict_ico {
     width: 35px;
+  }
+  .puntero {
+    cursor: pointer;
   }
   #nav-list li {
     border: 1px solid;

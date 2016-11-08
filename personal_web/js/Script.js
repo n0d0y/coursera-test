@@ -20,10 +20,6 @@ $(function () { // Same as document.addEventListener("DOMContentLoaded"...)
 /* Variables declaration */
 var dc = {};
 var homeHTML = "snippets/principal-snippet.html";
-var Spanishflag = "img/Spanish_ico.html";
-var Englishflag = "img/English_ico.html";
-var Frenchflag = "img/French_ico.html";
-var Latvianflag = "img/Latvian_ico.html";
 /* Variables declaration */
 
 // Convenience function for inserting innerHTML for 'select'
@@ -54,55 +50,30 @@ document.addEventListener("DOMContentLoaded", function(event) {
 		},
 		false);
 
-	$ajaxUtils.sendGetRequest(
-		Spanishflag,
-		function (responseText) {
-			document.querySelector("#chosenflag")
-				.innerHTML = responseText;
-		},
-		false);
+	document.querySelector("#chosenflag")
+	.innerHTML = "<img src='img/Spanish_ico.ico' class='center-block pict_ico'>";
 });
 
 
 // To change the flag icon when you choose a different languange
 	$("#sflag_ico").click(function (event) {
-		$ajaxUtils.sendGetRequest(
-		Spanishflag,
-		function (responseText) {
-			document.querySelector("#chosenflag")
-				.innerHTML = responseText;
-		},
-		false);
+		document.querySelector("#chosenflag")
+		.innerHTML = "<img src='img/Spanish_ico.ico' class='center-block pict_ico'>";
 	});
 	// To change the flag icon when you choose a different languange
 	$("#eflag_ico").click(function (event) {
-		$ajaxUtils.sendGetRequest(
-		Englishflag,
-		function (responseText) {
-			document.querySelector("#chosenflag")
-				.innerHTML = responseText;
-		},
-		false);
+		document.querySelector("#chosenflag")
+		.innerHTML = "<img src='img/English_ico.ico' class='center-block pict_ico'>";
 	});
 	// To change the flag icon when you choose a different languange
 	$("#fflag_ico").click(function (event) {
-		$ajaxUtils.sendGetRequest(
-		Frenchflag,
-		function (responseText) {
-			document.querySelector("#chosenflag")
-				.innerHTML = responseText;
-		},
-		false);
+		document.querySelector("#chosenflag")
+		.innerHTML = "<img src='img/French_ico.ico' class='center-block pict_ico'>";
 	});
 // To change the flag icon when you choose a different languange
 	$("#lflag_ico").click(function (event) {
-		$ajaxUtils.sendGetRequest(
-		Latvianflag,
-		function (responseText) {
-			document.querySelector("#chosenflag")
-				.innerHTML = responseText;
-		},
-		false);
+		document.querySelector("#chosenflag")
+		.innerHTML = "<img src='img/Latvian_ico.ico' class='center-block pict_ico'>";
 	});
 
 
