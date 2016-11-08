@@ -65,6 +65,36 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 
 // To change the flag icon when you choose a different languange
+	$("#sflag_ico").click(function (event) {
+		$ajaxUtils.sendGetRequest(
+		Spanishflag,
+		function (responseText) {
+			document.querySelector("#chosenflag")
+				.innerHTML = responseText;
+		},
+		false);
+	});
+	// To change the flag icon when you choose a different languange
+	$("#eflag_ico").click(function (event) {
+		$ajaxUtils.sendGetRequest(
+		Englishflag,
+		function (responseText) {
+			document.querySelector("#chosenflag")
+				.innerHTML = responseText;
+		},
+		false);
+	});
+	// To change the flag icon when you choose a different languange
+	$("#fflag_ico").click(function (event) {
+		$ajaxUtils.sendGetRequest(
+		Frenchflag,
+		function (responseText) {
+			document.querySelector("#chosenflag")
+				.innerHTML = responseText;
+		},
+		false);
+	});
+// To change the flag icon when you choose a different languange
 	$("#lflag_ico").click(function (event) {
 		$ajaxUtils.sendGetRequest(
 		Latvianflag,
