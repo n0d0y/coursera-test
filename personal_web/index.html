@@ -8,7 +8,7 @@
     <!-- -->
 
     <title>ANTONIO PASCUAL</title>
-    <link rel="stylesheet" href="Styles.css" >
+    <link rel="stylesheet" href="css/Styles.css" >
     <link rel="stylesheet" href="css/bootstrap.min.css" >
   </head>
 
@@ -21,7 +21,7 @@
           <div class="navbar-header">
             
              
-              <button type="button" class="navbar-toggle collapsed pull-left" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+              <button id="navbarToggle" type="button" class="navbar-toggle collapsed pull-left" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -30,13 +30,13 @@
 
               <span class="dropdown pull-right visible-xs">
                 <button class="btn btn-default dropdown-toggle" type="button" id="IdiomsMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                  <img id="pict_ico" src="Spanish_ico.ico" class="center-block">
+                  <img id="pict_ico" src="img/Spanish_ico.ico" class="center-block">
                 </button>
                 <ul class="dropdown-menu" aria-labelledby="IdiomsMenu">
-                  <li><a href="#"><img id="pict_ico" src="Spanish_ico.ico" class="center-block"></a></li>
-                  <li><a href="#"><img id="pict_ico" src="English_ico.ico" class="center-block"></a></li>
-                  <li><a href="#"><img id="pict_ico" src="French_ico.ico" class="center-block"></a></li>
-                  <li><a href="#"><img id="pict_ico" src="Latvian_ico.ico" class="center-block"></a></li>
+                  <li><a href="#"><img id="pict_ico" src="img/Spanish_ico.ico" class="center-block"></a></li>
+                  <li><a href="#"><img id="pict_ico" src="img/English_ico.ico" class="center-block"></a></li>
+                  <li><a href="#"><img id="pict_ico" src="img/French_ico.ico" class="center-block"></a></li>
+                  <li><a href="#"><img id="pict_ico" src="img/Latvian_ico.ico" class="center-block"></a></li>
                 </ul>
               </span>
 
@@ -49,40 +49,40 @@
           <div id="collapsable-nav" class="collapse navbar-collapse">
 
             <span>
-              <a href=""><img id="pict" src="Latvian.png" class="pull-right hidden-xs"></a>
+              <a href=""><img id="pict" src="img/Latvian_ico.ico" class="pull-right hidden-xs"></a>
             </span>
 
             <span>
-              <a href=""><img id="pict" src="French.png" class="pull-right hidden-xs"></a>
+              <a href=""><img id="pict" src="img/French_ico.ico" class="pull-right hidden-xs"></a>
             </span>
 
             <span>
-              <a href=""><img id="pict" src="English.png" class="pull-right hidden-xs"></a>
+              <a href=""><img id="pict" src="img/English_ico.ico" class="pull-right hidden-xs"></a>
             </span>
 
             <span>
-              <a href=""><img id="pict" src="Spanish.png" class="pull-right hidden-xs"></a>
+              <a href=""><img id="pict" src="img/Spanish_ico.ico" class="pull-right hidden-xs"></a>
             </span>
 
             <ul id="nav-list" class="nav navbar-nav text-center">
               <li>
-                <h2>Experiencia y Estudios</h2>
+                <a href=""><h2>Experiencia y Estudios</h2></a>
                 
               </li>
               <li>
-                <h2>Certificaciones</h2>
+                <a href=""><h2>Certificaciones</h2></a>
 
               </li>
               <li>
-                <h2>Software</h2>
+                <a href=""><h2>Software</h2></a>
                 
               </li>
               <li>
-                <h2>Idiomas y viajes</h2>
+                <a href=""><h2>Idiomas y viajes</h2></a>
               
               </li>
               <li>
-                <h2>Contacto</h2>
+                <a href=""><h2>Contacto</h2></a>
               
               </li>
             </ul>
@@ -92,9 +92,7 @@
       </nav>
   </header>
 
-  <div id="main-body" class="conainer">
-    <h2 class="container">Soy yo</h2>
-  </div>
+  <div id="main-content" class="container"></div>
 
 
 
@@ -104,6 +102,7 @@
     <!-- jQuery (Bootstrap JS plugins depend on it) -->
     <script src="js/jquery-2.1.4.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/script.js"></script>
+    <script src="js/Ajax.js"></script>
+    <script src="js/Script.js"></script>
   </body>
 </html>

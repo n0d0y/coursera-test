@@ -70,8 +70,9 @@ h2 {
 }
 
 #pict {
-  margin-top: 15px;
+  margin-top: 10px;
   margin-right: 5px;
+  width: 40px;
 }
 
 #pict:hover {
@@ -104,10 +105,6 @@ h2 {
   h2 {
     font-size: 1.5em!important;
   }
-  #pict {
-    width: 50px;
-    height: 30px;
-  }
   #nav-list li {
     height: 65px;
   }
@@ -121,27 +118,19 @@ h2 {
   #header-name {
     font-size: 30px;
   }
-  #pict {
-    width: 45px;
-    height: 25px;
-  }
   #nav-list li {
     height: 59px;
   }
 }
 
 /********** Small devices only **********/
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 769px) and (max-width: 991px) {
   h2 {
     font-size: 1.1em!important;
   }
   #header-name {
     padding-right: 30px;
     font-size: 24px;
-  }
-   #pict {
-    width: 40px;
-    height: 20px;
   }
   #nav-list li {
     height: 52px;
@@ -150,7 +139,7 @@ h2 {
 }
 
 /********** Extra Small devices only **********/
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   h2 {
     font-size: 1.3em!important;
   }
