@@ -14,16 +14,9 @@ $(function () { // Same as document.addEventListener("DOMContentLoaded"...)
 	});
 
 	// To change the flag icon when you choose a different languange
-	/*$("#lflag_ico").click(function (event) {
-		ShowLoading("#lflag_ico");
-		$ajaxUtils.sendGetRequest(
-		Latvianflag,
-		function (responseText) {
-			document.querySelector("#lflag_ico")
-				.innerHTML = responseText;
-		},
-		false);
-	});*/
+	$("#lflag_ico").click(function (event) {
+		Chagneicon("#chosenflag");
+	});
 });
 
 
@@ -32,7 +25,7 @@ $(function () { // Same as document.addEventListener("DOMContentLoaded"...)
 /* Variables declaration */
 var dc = {};
 var homeHTML = "snippets/principal-snippet.html";
-var Latvianflag = "img/Latvian_ico.ico";
+var Latvianflag = "img/Latvian_ico.html";
 /* Variables declaration */
 
 // Convenience function for inserting innerHTML for 'select'
@@ -41,6 +34,15 @@ var insertHtml = function (selector, html) {
 	targetElem.innerHTML = html;
 }
 
+
+/* Function to change the icon of the DropMenu button in xs devices */
+var Chagneicon = function (selector) {
+	var html = "<img src='img/Spanish_ico.ico' class='center-block pict_ico'>";
+	insertHtml (selector, html);
+}
+
+
+/* Function to change the icon of the DropMenu button in xs devices */
 
 // Show loading icon inside element identified by 'selector'.
 var ShowLoading = function (selector) {
@@ -59,6 +61,14 @@ document.addEventListener("DOMContentLoaded", function(event) {
 		homeHTML,
 		function (responseText) {
 			document.querySelector("#main-content")
+				.innerHTML = responseText;
+		},
+		false);
+
+	$ajaxUtils.sendGetRequest(
+		Latvianflag,
+		function (responseText) {
+			document.querySelector("#chosenflag")
 				.innerHTML = responseText;
 		},
 		false);
