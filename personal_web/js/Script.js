@@ -15,7 +15,13 @@ $(function () { // Same as document.addEventListener("DOMContentLoaded"...)
 
 	// To change the flag icon when you choose a different languange
 	$("#lflag_ico").click(function (event) {
-		Chagneicon("#chosenflag");
+		$ajaxUtils.sendGetRequest(
+		Latvianflag,
+		function (responseText) {
+			document.querySelector("#chosenflag")
+				.innerHTML = responseText;
+		},
+		false);
 	});
 });
 
@@ -25,6 +31,9 @@ $(function () { // Same as document.addEventListener("DOMContentLoaded"...)
 /* Variables declaration */
 var dc = {};
 var homeHTML = "snippets/principal-snippet.html";
+var Spanishflag = "img/Spanish_ico.html";
+var Englishflag = "img/English_ico.html";
+var Frenchflag = "img/French_ico.html";
 var Latvianflag = "img/Latvian_ico.html";
 /* Variables declaration */
 
@@ -34,15 +43,6 @@ var insertHtml = function (selector, html) {
 	targetElem.innerHTML = html;
 }
 
-
-/* Function to change the icon of the DropMenu button in xs devices */
-var Chagneicon = function (selector) {
-	var html = "<img src='img/Spanish_ico.ico' class='center-block pict_ico'>";
-	insertHtml (selector, html);
-}
-
-
-/* Function to change the icon of the DropMenu button in xs devices */
 
 // Show loading icon inside element identified by 'selector'.
 var ShowLoading = function (selector) {
@@ -66,7 +66,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 		false);
 
 	$ajaxUtils.sendGetRequest(
-		Latvianflag,
+		Spanishflag,
 		function (responseText) {
 			document.querySelector("#chosenflag")
 				.innerHTML = responseText;
