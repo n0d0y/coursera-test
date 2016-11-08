@@ -54,6 +54,16 @@ h2 {
   padding: 0px!important;
 }
 
+.pict {
+  margin-top: 10px;
+  margin-right: 5px;
+  width: 40px;
+}
+
+.pict:hover {
+  border: 2px solid black;
+}
+
 #header-nav {
   background-color: rgba(71, 114, 227, 0.39);
   border-radius: 0;
@@ -67,16 +77,6 @@ h2 {
   font-size: 36px;
   font-weight: bold;
   text-shadow: 1px 1px 1px #222;
-}
-
-#pict {
-  margin-top: 10px;
-  margin-right: 5px;
-  width: 40px;
-}
-
-#pict:hover {
-  border: 2px solid black;
 }
 
 #nav-list {
@@ -128,6 +128,9 @@ h2 {
   h2 {
     font-size: 1.1em!important;
   }
+  .pict {
+  width: 35px;
+}
   #header-name {
     padding-right: 30px;
     font-size: 24px;
@@ -149,7 +152,7 @@ h2 {
     margin-top: 15px;
     margin-right: 0px;
   }
-  #pict_ico {
+  .pict_ico {
     width: 35px;
   }
   #nav-list li {

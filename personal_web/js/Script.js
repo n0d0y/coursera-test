@@ -8,10 +8,22 @@ $(function () { // Same as document.addEventListener("DOMContentLoaded"...)
 		}
 	});
 
-	//For Firefox and Safari,
+	// For Firefox and Safari,
 	$("#navbarToggle").click(function (event) {
 		$(event.target).focus();
 	});
+
+	// To change the flag icon when you choose a different languange
+	/*$("#lflag_ico").click(function (event) {
+		ShowLoading("#lflag_ico");
+		$ajaxUtils.sendGetRequest(
+		Latvianflag,
+		function (responseText) {
+			document.querySelector("#lflag_ico")
+				.innerHTML = responseText;
+		},
+		false);
+	});*/
 });
 
 
@@ -20,6 +32,7 @@ $(function () { // Same as document.addEventListener("DOMContentLoaded"...)
 /* Variables declaration */
 var dc = {};
 var homeHTML = "snippets/principal-snippet.html";
+var Latvianflag = "img/Latvian_ico.ico";
 /* Variables declaration */
 
 // Convenience function for inserting innerHTML for 'select'

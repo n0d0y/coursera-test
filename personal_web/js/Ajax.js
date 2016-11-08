@@ -4,9 +4,6 @@ var ajaxUtils = {};
 
 // Returns an HTTP request object
 function getRequestObject () {
-
-	console.log("aquí llega");
-
 	if (global.XMLHttpRequest) {
 		return (new XMLHttpRequest());
 	}
