@@ -4,11 +4,7 @@
 }
 
 body {
-  /*padding: 0;
-  margin: 0;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  color: black; */
+  background-color: #eee;
 }
 
 h1 {
@@ -66,7 +62,7 @@ h2 {
 
 .pict:hover {
   cursor: pointer;
-  background-color: #94a8f1;
+  background-color: #337ab7;
 }
 
 .dropdown-menu li:hover {
@@ -88,6 +84,10 @@ h2 {
   text-shadow: 1px 1px 1px #222;
 }
 
+#header-name a:hover {
+  text-decoration: none;
+}
+
 #nav-list {
   margin-right: 15px;
   margin-left: 15px;
@@ -95,20 +95,29 @@ h2 {
 
 #nav-list li {
   padding: 0px 10px;
-  background-image: linear-gradient(#b7c8f4, #94a8f1);
+  background-image: linear-gradient(#b7c8f4, #337ab7);
   border: 1px solid darkblue;
   border-radius: 5px;
 }
 
 #nav-list li:hover {
-  background: #94a8f1;
+  background: #337ab7;
+  cursor: pointer;
 }
 
-#main-body {
-  background-color: grey;
+#main-content {
+  padding-right: 0px;
+  padding-left: 0px;
 }
-
 /* Simple Responsive Framework. */
+
+/*/////////////////// Certifications ///////////////////*/
+.Certificateframe {
+  background-color: grey;
+  border: 1px solid black;
+  border-radius: 4px;
+}
+/*/////////////////// Certifications ///////////////////*/
 
 
 /********** Large devices only **********/
@@ -156,6 +165,7 @@ h2 {
   #nav-list li {
     height: 52px;
     margin-right: 10px;
+    margin-bottom: 5px;
   }
 }
 
@@ -181,7 +191,7 @@ h2 {
     border-radius: 5px;
     margin-bottom: 10px;
     margin-right: 0px;
-    background-color: #94a8f1;
+    /*background-color: #94a8f1;*/
   }
   #nav-list li:hover {
     background: #E7E7E7;

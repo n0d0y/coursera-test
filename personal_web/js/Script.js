@@ -20,6 +20,11 @@ $(function () { // Same as document.addEventListener("DOMContentLoaded"...)
 /* Variables declaration */
 var dc = {};
 var homeHTML = "snippets/principal-snippet.html";
+var backgroundHTML = "snippets/background-snippet.html";
+var certificationsHTML = "snippets/certifications-snippet.html";
+var skillsHTML = "snippets/skills-snippet.html";
+var languagesHTML = "snippets/languages-snippet.html";
+var contactHTML = "snippets/contact-snippet.html";
 /* Variables declaration */
 
 // Convenience function for inserting innerHTML for 'select'
@@ -55,26 +60,87 @@ document.addEventListener("DOMContentLoaded", function(event) {
 });
 
 
-// To change the flag icon when you choose a different languange
-	$("#sflag_ico").click(function (event) {
-		document.querySelector("#chosenflag")
-		.innerHTML = "<img src='img/Spanish_ico.ico' class='center-block pict_ico'>";
-	});
-	// To change the flag icon when you choose a different languange
-	$("#eflag_ico").click(function (event) {
-		document.querySelector("#chosenflag")
-		.innerHTML = "<img src='img/English_ico.ico' class='center-block pict_ico'>";
-	});
-	// To change the flag icon when you choose a different languange
-	$("#fflag_ico").click(function (event) {
-		document.querySelector("#chosenflag")
-		.innerHTML = "<img src='img/French_ico.ico' class='center-block pict_ico'>";
-	});
-// To change the flag icon when you choose a different languange
-	$("#lflag_ico").click(function (event) {
-		document.querySelector("#chosenflag")
-		.innerHTML = "<img src='img/Latvian_ico.ico' class='center-block pict_ico'>";
-	});
+// To choose backgroundHTML
+$("#background").click(function (event) {
+	//On first load, show home view
+	ShowLoading("#main-content");
+	$ajaxUtils.sendGetRequest(
+		backgroundHTML,
+		function (responseText) {
+			document.querySelector("#main-content")
+				.innerHTML = responseText;
+		},
+		false);
+	/*document.querySelector("#background").....................................*/
+});
+// To choose certificationsHTML
+$("#certifications").click(function (event) {
+	//On first load, show home view
+	ShowLoading("#main-content");
+	$ajaxUtils.sendGetRequest(
+		certificationsHTML,
+		function (responseText) {
+			document.querySelector("#main-content")
+				.innerHTML = responseText;
+		},
+		false);
+});
+// To choose skillsHTML
+$("#skills").click(function (event) {
+	//On first load, show home view
+	ShowLoading("#main-content");
+	$ajaxUtils.sendGetRequest(
+		skillsHTML,
+		function (responseText) {
+			document.querySelector("#main-content")
+				.innerHTML = responseText;
+		},
+		false);
+});
+// To choose languagesHTML
+$("#idioms").click(function (event) {
+	//On first load, show home view
+	ShowLoading("#main-content");
+	$ajaxUtils.sendGetRequest(
+		languagesHTML,
+		function (responseText) {
+			document.querySelector("#main-content")
+				.innerHTML = responseText;
+		},
+		false);
+});
+// To choose contactHTML
+$("#contact").click(function (event) {
+	//On first load, show home view
+	ShowLoading("#main-content");
+	$ajaxUtils.sendGetRequest(
+		contactHTML,
+		function (responseText) {
+			document.querySelector("#main-content")
+				.innerHTML = responseText;
+		},
+		false);
+});
+// To change the flag icon when you choose Spanish languange
+$("#sflag_ico").click(function (event) {
+	document.querySelector("#chosenflag")
+	.innerHTML = "<img src='img/Spanish_ico.ico' class='center-block pict_ico'>";
+});
+// To change the flag icon when you choose English languange
+$("#eflag_ico").click(function (event) {
+	document.querySelector("#chosenflag")
+	.innerHTML = "<img src='img/English_ico.ico' class='center-block pict_ico'>";
+});
+// To change the flag icon when you choose French languange
+$("#fflag_ico").click(function (event) {
+	document.querySelector("#chosenflag")
+	.innerHTML = "<img src='img/French_ico.ico' class='center-block pict_ico'>";
+});
+// To change the flag icon when you choose Latvian languange
+$("#lflag_ico").click(function (event) {
+	document.querySelector("#chosenflag")
+	.innerHTML = "<img src='img/Latvian_ico.ico' class='center-block pict_ico'>";
+});
 
 
 // Expose utility to the global object
