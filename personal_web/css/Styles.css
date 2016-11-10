@@ -114,7 +114,12 @@ footer section h3 {
   color: #337ab7!important;
 }
 
-footer section hr {
+footer h4 {
+  text-align: center;
+  font-size: 1.0em!important;
+}
+
+footer hr {
   width: 70%;
 }
 
@@ -136,6 +141,10 @@ footer section hr {
 
 #sec2 {
   border-left: 1px solid black!important;
+}
+
+#sec2 ul {
+  padding: 0;
 }
 /*/////////////////// Footer stuff /////////////////////*/
 
