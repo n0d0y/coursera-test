@@ -142,7 +142,6 @@ $("#lflag_ico").click(function (event) {
 	.innerHTML = "<img src='img/Latvian_ico.ico' class='center-block pict_ico'>";
 });
 
-
 // Expose utility to the global object
 global.$dc = dc;
 

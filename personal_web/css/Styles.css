@@ -4,7 +4,7 @@
 }
 
 body {
-  background-color: #eee;
+  /*background-color: #eee!important;*/
 }
 
 h1 {
@@ -69,6 +69,10 @@ h2 {
   background-color: #E7E7E7;
 }
 
+.puntero {
+  cursor: pointer;
+}
+
 #header-nav {
   background-color: rgba(71, 114, 227, 0.39);
   border-radius: 0;
@@ -113,9 +117,18 @@ h2 {
 
 /*/////////////////// Certifications ///////////////////*/
 .Certificateframe {
-  background-color: grey;
+  background-image: linear-gradient(#f5f5f5, #337ab7);
   border: 1px solid black;
   border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.Certificateframe h2 {
+  padding-top: 70px;
+}
+
+.Certificateframe img {
+  padding: 10px 0px;
 }
 /*/////////////////// Certifications ///////////////////*/
 
@@ -128,7 +141,7 @@ h2 {
   #nav-list li {
     margin-right: 20px;
     margin-bottom: 5px;
-    height: 65px;
+    /*height: 65px;*/
   }
 }
 
@@ -155,9 +168,6 @@ h2 {
   .pict_ico {
     width: 35px;
   }
-  .puntero {
-   cursor: pointer;
-  }
   #header-name {
     padding-right: 30px;
     font-size: 24px;
@@ -172,7 +182,7 @@ h2 {
 /********** Extra Small devices only **********/
 @media (max-width: 768px) {
   h2 {
-    font-size: 1.3em!important;
+    font-size: 1.0em!important;
   }
   #header-name {
     font-size: 20px;
@@ -183,17 +193,8 @@ h2 {
   .pict_ico {
     width: 35px;
   }
-  .puntero {
-    cursor: pointer;
-  }
   #nav-list li {
-    border: 1px solid;
-    border-radius: 5px;
     margin-bottom: 10px;
     margin-right: 0px;
-    /*background-color: #94a8f1;*/
-  }
-  #nav-list li:hover {
-    background: #E7E7E7;
   }
 }
