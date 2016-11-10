@@ -19,10 +19,6 @@ h2 {
   border: 1px solid darkblue;
 }
 
-.navbar-header {
-  width: 100%;
-}
-
 .btn {
   margin: 8px!important;
   padding: 0px!important;
@@ -62,7 +58,7 @@ h2 {
 
 .pict:hover {
   cursor: pointer;
-  background-color: #337ab7;
+  box-shadow: 1px 1px 1px #222;
 }
 
 .dropdown-menu li:hover {
@@ -75,14 +71,14 @@ h2 {
 
 #header-nav {
   background-color: rgba(71, 114, 227, 0.39);
-  border-radius: 0;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
   border: 0;
+  margin-bottom: 0px;
 }
 
 #header-name {
   font-family: "Garamond", fantasy, serif;
-  margin: 13px;
-  padding-right: 40px;
   font-size: 36px;
   font-weight: bold;
   text-shadow: 1px 1px 1px #222;
@@ -92,21 +88,16 @@ h2 {
   text-decoration: none;
 }
 
-#nav-list {
-  margin-right: 15px;
-  margin-left: 15px;
-}
-
 #nav-list li {
-  padding: 0px 10px;
-  background-image: linear-gradient(#b7c8f4, #337ab7);
-  border: 1px solid darkblue;
-  border-radius: 5px;
 }
 
 #nav-list li:hover {
-  background: #337ab7;
+  background: #E7E7E7;
   cursor: pointer;
+}
+
+#background {
+  text-align: left;
 }
 
 #main-content {
@@ -114,6 +105,40 @@ h2 {
   padding-left: 0px;
 }
 /* Simple Responsive Framework. */
+
+
+/*/////////////////// Footer stuff /////////////////////*/
+footer section h3 {
+  text-align: center;
+  font-size: 1.3em!important;
+  color: #337ab7!important;
+}
+
+footer section hr {
+  width: 70%;
+}
+
+.panel-footer {
+  background-color: lightgrey!important;
+}
+
+.contfooter {
+  padding: 0px!important;
+}
+
+.icon-footer {
+  width: 35px;
+}
+
+.icon-footer:hover {
+  box-shadow: 1px 1px 1px #222;
+}
+
+#sec2 {
+  border-left: 1px solid black!important;
+}
+/*/////////////////// Footer stuff /////////////////////*/
+
 
 /*/////////////////// Certifications ///////////////////*/
 .Certificateframe {
@@ -138,11 +163,6 @@ h2 {
   h2 {
     font-size: 1.5em!important;
   }
-  #nav-list li {
-    margin-right: 20px;
-    margin-bottom: 5px;
-    /*height: 65px;*/
-  }
 }
 
 /********** Medium devices only **********/
@@ -152,11 +172,6 @@ h2 {
   }
   #header-name {
     font-size: 30px;
-  }
-  #nav-list li {
-    margin-right: 15px;
-    margin-bottom: 5px;
-    height: 59px;
   }
 }
 
@@ -168,14 +183,17 @@ h2 {
   .pict_ico {
     width: 35px;
   }
+  .navbar-header {
+    padding-left: 0!important;
+  }
   #header-name {
-    padding-right: 30px;
     font-size: 24px;
   }
-  #nav-list li {
-    height: 52px;
-    margin-right: 10px;
-    margin-bottom: 5px;
+  #background {
+    padding: 0;
+  }
+  #sec2 {
+  border-left: none!important;
   }
 }
 
@@ -183,6 +201,13 @@ h2 {
 @media (max-width: 768px) {
   h2 {
     font-size: 1.0em!important;
+  }
+  footer section h3 {
+    text-align: center;
+    font-size: 1.2em!important;
+  }
+  #sec2 {
+  border-left: none!important;
   }
   #header-name {
     font-size: 20px;
@@ -193,8 +218,23 @@ h2 {
   .pict_ico {
     width: 35px;
   }
+  #nav-list {
+  margin-right: 15px;
+  margin-left: 15px;
+  }
   #nav-list li {
     margin-bottom: 10px;
     margin-right: 0px;
+    padding: 0px 10px;
+    background-image: linear-gradient(#b7c8f4, #337ab7);
+    border: 1px solid darkblue;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px #222;
+  }
+  #nav-list li:hover {
+  background: #337ab7;
+  }
+  #background {
+  text-align: center;
   }
 }
