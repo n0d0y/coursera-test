@@ -74,7 +74,6 @@ h2 {
   border-top-right-radius: 0;
   border-top-left-radius: 0;
   border: 0;
-  margin-bottom: 0px;
 }
 
 #header-name {
@@ -134,8 +133,8 @@ footer hr {
   width: 70%;
 }
 
-footer #contact {
-  margin-bottom: 10px;
+footer #contact2 {
+  margin-bottom: 15px;
   text-transform: uppercase;
   cursor: pointer;
 }
@@ -149,7 +148,7 @@ footer #contact {
 }
 
 .icon-footer {
-  width: 35px;
+  width: 30px;
 }
 
 .icon-footer:hover {
@@ -157,7 +156,7 @@ footer #contact {
 }
 
 #sec2 {
-  border-left: 1px solid black!important;
+  border-left: 1px solid white!important;
 }
 
 #sec2 ul {
@@ -172,6 +171,7 @@ footer #contact {
   border: 1px solid black;
   border-radius: 4px;
   margin-bottom: 20px;
+  cursor: pointer;
 }
 
 .Certificateframe h2 {
@@ -181,6 +181,13 @@ footer #contact {
 .Certificateframe img {
   padding: 10px 0px;
 }
+
+/*/////////////////// Certificate /////////////////////*/
+#titlePicture {
+  padding: 0;
+}
+/*/////////////////// Certificate /////////////////////*/
+
 /*/////////////////// Certifications ///////////////////*/
 
 
